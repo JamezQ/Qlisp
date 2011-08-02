@@ -1,6 +1,6 @@
 package qlisp;
 
-public interface Command { dd
+public interface Command { 
 
     public String get(String[] args);
     

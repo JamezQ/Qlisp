@@ -1,0 +1,8 @@
+
+
+PROPOSAL AND GUIDELINES FOR QLISP:
+
+The basics of Qlisp are done, the language is made. However the language does not support variables. This can be very easily hacked together, but I would like to remake it while it is still small, so it can be done it a better, more planned out manner.
+
+
+

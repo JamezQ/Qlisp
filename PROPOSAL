@@ -18,7 +18,7 @@ The only types:
 
 1. NUMBERS
 
-def. Anything that starts with [0-9] or a ., and if a dot is there it must have numbers after it.
+def. Anything that starts with [0-9] or a ., and if a dot is there it must have numbers after it. A number may end in _ to detonate 
 
 ex. 3 1234 3.14 5203002 4442 22 41412.41241243242142134321432
 
@@ -26,11 +26,11 @@ invalid. 324214. .33333333x  two (423)
 
 2. VARIABLES
 
-def. Anything that is a combination of letters and numbers, that must not have only numbers, and must not end in a period.
+def. Anything that is a combination of letters and numbers, that must not have only numbers, and must not end in a period. They can not start with '. They cannot have " in them.
 
 ex. a i a2 232fewf !@$@^)&@ this.a
 
-invalid. notavar. 25234  (varnamerewreqwreqw242423421)
+invalid. notavar. 25234  (varnamerewreqwreqw242423421) 'lol
 
 
 3. EXPRESSIONS
@@ -54,8 +54,19 @@ def. Anything thats starts with a " and ends with a ".
 
 6. DATA
 
-def. The technical definition is anything that does not fit in the above. By logic this means anything that starts with '.
+def. The technical definition is anything that does not fit in the above. By logic this means anything that starts with '. data can end in a ' aswell in order to include spaces easily, but it is not required.
+
+_________________________________________________________________________________________________________
+
+More info on each type.
+
+Giving on each info.
+
+1. Returns: (aka what it evaluates to)
+2. Naming guidelines.
 
 
 
+NUMBERS:
 
+Returns: Itself,

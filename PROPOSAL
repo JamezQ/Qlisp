@@ -6,3 +6,9 @@ The basics of Qlisp are done, the language is made. However the language does no
 
 
 
+This will not start out written out planned out, I will write things as I remember them.
+
+TYPES OF DATA:
+
+There will be no int, double, etc.
+

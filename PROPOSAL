@@ -78,6 +78,9 @@ VARIABLES:
 
 Returns: Whatever the variables value evaluates to. To explain...
 
+In otherwords, the variable it set to what the argument to the set command evaluates to. Then when calling the variable, you get what THAT evaluates to.
+
+
 "=" is used for setting in Qlisp, like setq in some lisps.
 
 Qlisp >>> (= a 2)
@@ -88,12 +91,6 @@ Qlisp >>> a
 4
 Qlisp >>> a
 4
-Qlisp >>> (= a '(+ a 2) )
-a
-Qlisp >>> a
-6
-Qlisp >>> a
-8
 Qlisp >>> (= a "test")
 a
 Qlisp >>> a
@@ -102,6 +99,15 @@ Qlisp >>> (= a 124312.4324324324)
 a
 Qlisp >>> a
 124312.432_
+Qlisp >>> (= a ''(+ a 2) )
+a
+Qlisp >>> a
+(+ a 2)
 =====================================================================
 Naming guidelines:
+
+Never start with a number, and only use letters and numbers and - in the variable. This will make sure future compatibility with qlisp interpreters.
+
+
+EXPRESSIONS:
 

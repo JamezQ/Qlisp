@@ -44,7 +44,7 @@ invalid (). +(35    (()   435345 554 (((())ee
 
 4. NAMESPACES
 
-def. The same rules as a variable, but it must end in a period. This is the only type that can.
+def. The same rules as a variable, but it must end in a period. This is the only type besides data that can.
 
 ex. this. io. %@TG#@. (). 1111.
 
@@ -55,7 +55,6 @@ def. Anything thats starts with a " and ends with a ".
 6. DATA
 
 def. The technical definition is anything that does not fit in the above. By logic this means anything that starts with '. data can end in a ' aswell in order to include spaces easily, but it is not required.
-
 _________________________________________________________________________________
 
 More info on each type.
@@ -110,4 +109,73 @@ Never start with a number, and only use letters and numbers and - in the variabl
 
 
 EXPRESSIONS:
+
+Returns: What the first argument of the expression with all the evaluated extra arguments, 0 or more, returns. Arguments are automatically converted to the type the function needs.
+
+Qlisp >>> (+ 2 2)
+4
+Qlisp >>> (print "lol")
+lol
+Qlisp >>> (print 'lol')
+lol
+Qlisp >>> (+ (- 3 2) 1)
+2
+======================================================================
+Naming guidelines:
+
+The function should be right next to the opening paren, and the last argument should be right next the the last paren. The arguments should be spaced by one. Unless you are indenting. Then it should be the function is right next to the open paren, and the last paren is alone on it's own line.
+
+
+(+
+  2
+  (-
+    3
+    (+
+      1
+      a
+    )
+  )
+  2
+)
+
+NAMESPACES:
+
+Returns: A list containing everything in the namespace. A namespace can contain only namespaces and variables.
+
+
+ex.
+
+Qlisp >>> io.
+(print read get scan println printf db. net.)
+Qlisp >>> io.db.
+(query closedb opendb)
+
+=======================================================================
+
+Naming conventions: The same naming conventions as a variable, of course it must end in a period.
+
+STRINGS:
+
+Returns: The string itself, with quotes. Exactly how it is. Except natural newlines are ignored. 
+
+=======================================================================
+
+Naming conventions: None, a string may be on mutiple lines, but the newlines are ignored , so you must use \n.
+
+
+DATA:
+
+Returns: The data with the beggining ' removed, also the ending ' if used.
+
+
+Naming conventions: none
+
+
+----------------------------------------------------------------------
+
+End of type discussion.
+
+
+
+
 
